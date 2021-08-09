@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    width: auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.counter-window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title, .counter-window, .row, .reset-btn {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn1 {
+width: 50px;
+height: 30px;
+color: black;
+background-color:royalblue;
+border: 2px solid black;
+}
+#btn2 {
+width: 50px;
+height: 30px;
+margin-left: 20px;
+color: black;
+background-color: red;
+border: 2px solid black;
+}
+#btn3 {
+width: 50px;
+height: 30px;
+margin-left: 20px;
+color: black;
+background-color: royalblue;
+border: 2px solid black;
+}
+#btn4 {
+width: 60px;
+height: 40px;
+color: black;
+background-color: rgb(65, 225, 78);
+border: 2px solid black;
+}
+.refresh1 {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+}

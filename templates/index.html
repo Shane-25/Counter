@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Counter</title>
+</head>
+<body>
+
+    <p class="title">Counter</p>
+    <p class="counter-window">{{ session['clicks'] }}</p>
+    <div class="row">
+        <div class="click-btn">
+            <form action="/process_clicks" method="post">
+                <input type="hidden" name="which_form" value="click">
+                <button id="btn1" onmouseover="over(this)" onmouseout="out(this)">Click</button>
+            </form>
+        </div>
+        <div class="click-btn2">
+            <form action="/process_clicks" method="post">
+                <input type="hidden" name="which_form" value="click2">
+                <button id="btn3" onmouseover="over3(this)" onmouseout="out3(this)">Click2</button>
+            </form>
+        </div>
+        <div class="reset-btn">
+            <form action="/process_clicks" method="post">
+                <input type="hidden" name="which_form" value="reset">
+                <button id="btn2" onmouseover="over2(this)" onmouseout="out2(this)">Reset</button>
+            </form>
+        </div>
+    </div>
+    <div class="refresh1">
+        <form action="/process_clicks" method="post">
+            <input type="hidden" name="which_form" value="refresh">
+            <button id="btn4" onclick="window.location.href=window.location.href" onmouseover="over4(this)" onmouseout="out4(this)">Refresh Page</button>
+        </form>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
